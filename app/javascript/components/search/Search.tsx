@@ -40,24 +40,8 @@ class Search extends React.Component<{}, { searchTerm: string, searchResults: an
         }
 
         return (
-            <div className="Search">
-                <div className="Search-header">
-                    <Container className="py-3">
-                        <InputGroup onKeyDown={this.keyPressed}>
-                            <FormControl
-                                placeholder="Search buildpacks"
-                                aria-label="Search buildpacks"
-                                size="lg"
-                            />
-                        </InputGroup>
-                    </Container>
-                </div>
-                {spinner}
-                <Container>
-                    {summary}
-                    <SearchList searchItems={this.state.searchResults} />
-                </Container>
-            </div>
+          <>
+          </>
         );
     }
 

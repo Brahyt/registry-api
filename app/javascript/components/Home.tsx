@@ -1,19 +1,13 @@
 import React from 'react';
-import './App.scss';
 import { Button, Card, CardDeck, Col, Container, Image, Jumbotron, Row } from 'react-bootstrap';
 import logo from "./logo-light.png";
 import searchIcon from "./search.svg";
 import versionIcon from "./versioning-02.svg"
 import checkIcon from "./check-03.svg";
-import Header from "./common/Header";
-import Search from "./search/Search";
-import Footer from "./common/Footer";
 
-function App() {
+function Home() {
     return (
         <div className="App">
-            <Header />
-            <Search />
             <Jumbotron fluid>
                 <Container>
                     <h1>Buildpack Registry</h1>
@@ -70,9 +64,8 @@ function App() {
                     </CardDeck>
                 </Row>
             </Container>
-            <Footer />
         </div>
     );
 }
 
-export default App;
+export default Home;
